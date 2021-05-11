@@ -1,5 +1,5 @@
 
-
+from django.contrib.messages import constants as messages
 from pathlib import Path
 import os
 
@@ -126,3 +126,8 @@ STATICFILES_DIRS=[
 MEDIA_URL='/media/'
 MEDIA_ROOT= BASE_DIR /'media'
 
+
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+
+}
